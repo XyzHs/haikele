@@ -1,0 +1,625 @@
+/* css */
+body,div,ul,li { padding: 0; margin: 0; }
+ul { list-style: none ; }
+*{margin: 0;padding: 0;}
+img { border: none; display: block;}
+a {text-decoration: none;}
+body, button, input, select, textarea {
+    color: #333333;
+    font-size:12px;
+}
+button, input,select, textarea {border:none;}
+ol, ul {
+    list-style: none outside none;
+}
+li {list-style:none;}
+a img {
+    display: block;
+    float: left;
+    margin-right:10px;
+    border:none;
+}
+img {
+    vertical-align: middle;border:none;
+}
+/*-------------------列表页----------------*/
+.navs .nav .nav12{
+    display: none;
+}
+.clearfix1:after {
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.main {
+    width: 1000px;
+    margin: 0 auto;
+}
+.breadcrumb-n {
+    width: 100%;
+    float: left;
+    margin: 7px 0 10px 0;
+    color: #666;
+}
+.breadcrumb-n li {
+    float: left;
+    margin-right: 10px;
+    line-height: 14px;
+}
+.breadcrumb-nCurrent {
+    color: #85B819;
+}
+.breadcrumb-n a, .breadcrumb-n a:link, .breadcrumb-n a:visited {
+    color: #85B819;
+    text-decoration: none;
+}
+/*------------------------------------*/
+.pl {
+    width: 192px;
+    float: left;
+}
+.list {
+    width: 190px;
+    border: 1px solid #ddd;
+    float: left;
+    margin: 0 0 10px 0;
+}
+.list_item {
+    width: 100%;
+    float: left;
+}
+.list_item h3 {
+    font-size: 14px;
+    background-color: #f7f7f7;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #CCC;
+    padding-left: 15px;
+    position: relative;
+    float: left;
+    width: 175px;
+    font-weight: normal;
+}
+.list_item h3 a, .list_item h3 a:link, .list_item h3 a:visited {
+    color: #333;
+    text-decoration: none;
+}
+.list_item ul {
+    width: 170px;
+    padding: 10px;
+    line-height: 24px;
+    float: left;
+    background: #FFF;
+}
+.list_item li {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 10px;
+}
+.list_itemA {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    background: #fff;
+}
+.pl_viewed {
+    margin: 0 0 10px 0;
+}
+.viewed {
+    margin: 0px;
+}
+.rec, .viewed {
+    width: 192px;
+    float: left;
+    margin: 10px 0;
+}
+.rec h2, .viewed h2, .pL_rec h2, .comListLeft .pl_viewed h3 {
+    width: 160px;
+    height: 35px;
+    background: #F7F7F7;
+    line-height: 35px;
+    padding: 0 15px;
+    font-size: 14px;
+    float: left;
+    border: 1px solid #DDD;
+    font-weight: normal;
+}
+.pl_viewed .viewed_main, .comListLeft .pl_viewed ul {
+    width: 160px;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 0 15px 10px 15px;
+    float: left;
+    line-height: 20px;
+}
+.viewed_main, .pL_recMain {
+    width: 170px;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 0 10px 10px;
+    float: left;
+    line-height: 20px;
+}
+.pl_viewed .viewed_main li, .comListLeft .pl_viewed li {
+    border-bottom: 1px dashed #DDDDDD;
+    float: left;
+    padding: 10px 0;
+    width: 160px;
+    position: relative;
+}
+.viewed_main li {
+    border-bottom: 1px dashed #DDDDDD;
+    float: left;
+    padding: 10px 0;
+    width: 170px;
+    position: relative;
+}
+.pl_viewed .newpdtPlist_list {
+    border: 1px solid #FFF;
+    box-shadow: none;
+    width: 148px;
+    padding: 5px;
+}
+.newpdtPlist_list {
+    margin: 0 auto;
+    border: 1px solid #FFF;
+    line-height: 20px;
+    width: 210px;
+    position: relative;
+    padding: 10px 10px 0 10px;
+}
+.newpdtPlist_list a,.newpdtPlist_list img{
+    display: block;
+    height: 148px;
+    width: 148px;
+}
+/*--------kkk--------------kkk--------------*/
+.pr {
+    width: 798px;
+    float: right;
+}
+.pr_slide {
+    width: 798px;
+    float: left;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+.pr_slide .slide_xF_6 {
+    width: 798px;
+    height: 200px;
+}
+.slide_xF_6 {
+    position: relative;
+    width: 1000px;
+    height: 60px;
+    OVERFLOW: hidden;
+    margin: 0 auto;
+}
+.pr_slide .slide_xF_6 .box {
+    width: 798px;
+    height: 200px;
+}
+.slide_xF_6 .box {
+    position: relative;
+    width: 1000px;
+    height: 60px;
+    overflow: hidden;
+}
+.pr_slide .slide_xF_6 .list li {
+    width: 798px;
+}
+.slide_xF_6 .list LI {
+    position: relative;
+    width: 1000px;
+    float: left;
+}
+.pr_slide .slide_xF_6 .list li a {
+    width: 798px;
+    height: 200px;
+}
+.slide_xF_6 .list LI A {
+    position: relative;
+    width: 1000px;
+    display: block;
+    height: 60px;
+    overflow: hidden;
+}
+.pr_slide .slide_xF_6 .list img {
+    width: 798px;
+    height: 200px;
+}
+.slide_xF_6 .list IMG {
+    _vertical-align: top;
+}
+.slide_xF_6 .btn {
+    position: absolute;
+    bottom: 4px;
+    overflow: hidden;
+    right: 6px;
+    z-index: 999;
+}
+.slide_xF_6 .btn LI {
+    text-align: center;
+    margin: 0px 0px 0px 10px;
+    width: 16px;
+    background: #eee;
+    float: left;
+    height: 6px;
+    text-indent: -999px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.slide_xF_6 .btn .selected {
+    background: #f30;
+    COLOR: #fff;
+}
+.select {
+    margin: 0 0 10px 0;
+}
+.related, .select {
+    width: 796px;
+    float: left;
+    border: 1px solid #ddd;
+    line-height: 20px;
+}
+.select_main {
+    width: 776px;
+    padding: 0 10px;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.select_main dl {
+    border-bottom: 1px dashed #DDD;
+    float: left;
+    padding: 10px 10px 0px 10px;
+    width: 756px;
+}
+.select_main dt {
+    float: left;
+    font-weight: bold;
+    width: 35px;
+    text-align: right;
+    margin-right: 10px;
+}
+.select_main dd {
+    float: right;
+    width: 711px;
+}
+.select_mainA:hover, .select_main a.select_select {
+    color: #E4393C;
+    text-decoration: none;
+    float: left;
+    display: block;
+    width: 12.5%;
+}
+.select_mainA {
+    display: block;
+    color: #333;
+    width: 12.5%;
+    float: left;
+    text-decoration: none;
+    margin-bottom: 6px;
+    overflow: hidden;
+}
+.plist {
+    width: 798px;
+    float: left;
+    padding: 0 0 20px 0;
+}
+.plist_title {
+    width: 796px;
+    background: #F7F7F7;
+    height: 36px;
+    float: left;
+    border: 1px solid #DDD;
+    box-shadow: 0 1px 2px #E0E0E0;
+    font-size: 14px;
+}
+.plist_title ul {
+    float: left;
+    height: 100%;
+    line-height: 34px;
+}
+.plist_title li {
+    float: left;
+}
+.plist_title a.plist_titleSelect3 {
+    vertical-align: middle;
+    padding: 0 20px;
+    background-color: #E4393C;
+    cursor: pointer;
+    height: 36px;
+    color: #FFF;
+    position: relative;
+}
+.plist_title a, .plist_title a:link, .plist_title a:visited {
+    vertical-align: middle;
+    padding: 0 20px;
+    cursor: pointer;
+    height: 36px;
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    line-height: 36px;
+    border-right: 1px solid #DDD;
+}
+.plistUl {
+    width: 798px;
+    float: left;
+}
+.plistUl li {
+    width: 24.9%;
+    padding: 10px 0;
+    float: left;
+}
+.plist_list {
+    margin: 0 auto;
+    line-height: 18px;
+    width: 190px;
+    position: relative;
+    border: 1px solid #FFF;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+.plistUPadding {
+    padding: 5px 15px 10px 15px;
+    text-align: left;
+}
+.plistUl p {
+    width: 100%;
+}
+.plist_list_sale {
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    color: #E60012;
+    width: 100%;
+    margin: 0 0 6px 0;
+    display: inline-block;
+}
+.plist_listName {
+    height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+.sale_Name1 {
+    color: #0aa006;
+}
+.plist_list_comment {
+    margin: 6px 0 0 0;
+    height: 18px;
+}
+.plistUPadding .plist_list_comment a {
+    color: #0087DC;
+    margin: 0 0 0 10px;
+}
+.plistUlP {
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+}
+.plist_listDate {
+    height: 18px;
+}
+.plist_list img{
+    display: block;
+    height: 170px;
+    width: 170px;
+}
+.plistUl .plist_listBtn2:hover {
+    background-color: #ADABAB;
+}
+.plistUl .plist_listBtn2 {
+    background-color: #ADABAB;
+    width: 78px;
+    height: 26px;
+    cursor: pointer;
+    color: #fff;
+    float: left;
+    line-height: 26px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.plist_list_num_add, .plist_list_num_dis {
+    width: 16px;
+    height: 14px;
+    display:block;
+    cursor: pointer;
+    background: url(../img/sprite.png) no-repeat 0px 0px;
+}
+.plist_list_num_add {
+    background-position: -8px -50px;
+}
+.plist_list_num_dis {
+    background-position: -8px -64px;
+}
+.plist_list_num_text {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    width: 30px;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+}
+.plist_list_num {
+    float: left;
+}
+.plist_list_num span {
+    float: left;
+    height: 28px;
+    margin-left: 2px;
+    width: 16px;
+    padding: 1px 0 0 0;
+}
+.plist_title a.plist_titleSelect2 span, .plist_title a.plist_titleSelect3 span {
+    display: inline-block;
+    width: 7px;
+    height: 8px;
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    background: url(../img/sprite.png) no-repeat 0px 0px;
+}
+.plist_title a.plist_titleSelect3 span {
+    background-position: 0px -58px;
+}
+
+
+.plike {
+    width: 796px;
+    float: left;
+    border: 1px solid #ddd;
+    line-height: 20px;
+}
+.plike h3 {
+    background: #F7F7F7;
+    width: 776px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    padding: 0 10px;
+    float: left;
+    border-bottom: 1px solid #ddd;
+    font-weight: normal;
+}
+.plike h3 span {
+    float: left;
+}
+.plike ul {
+    width: 756px;
+    float: left;
+    padding: 20px;
+}
+.plike li {
+    float: left;
+    width: 25%;
+}
+.plike .newpdtPlist_list {
+    margin: 0 auto;
+    border: 1px solid #FFF;
+    line-height: 20px;
+    /*width: 85%;*/
+    position: relative;
+    padding: 10px 10px 0 10px;
+    width: 160px;
+}
+.newpdtPlist_list {
+    margin: 0 auto;
+    border: 1px solid #FFF;
+    line-height: 20px;
+    width: 210px;
+    position: relative;
+    padding: 10px 10px 0 10px;
+}
+.plike .newpdtPlist_list img {
+    width: 160px;
+    height: 160px;
+}
+.newpdtPlist_list .plistUPadding {
+    padding: 5px 0 10px 0;
+}
+.plistUPadding {
+    padding: 5px 15px 10px 15px;
+    text-align: left;
+}
+.plist_listName1 {
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+.sale_Name1 {
+    color: #0aa006;
+}
+.fl {
+    float: left;
+}
+.p_priceN {
+    color: #FF0000;
+    font-size: 14px;
+    margin: 0 10px 0 0;
+}
+.fl {
+    float: left;
+}
+.pInfo_price2 {
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+/*------------------a标签的效果------------------*/
+.pl a:hover,.plist_listName a:hover{
+    color: darkred;
+    text-decoration: underline;
+}
+.plist_title a:hover{
+    color: darkred;
+}
+.newpdtPlist_list .plistUPadding .bendan{
+    height: 18px;
+    font-size: 12px;
+    line-height: 7px;
+}
+.newpdtPlist_list .plistUPadding .bendan:hover{
+    color: darkred;
+    text-decoration: underline;
+}
+
+.newpdtPlist_list:hover{
+    border:1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>海客乐- O2O有机食品连锁_安全高品质_还原食物本真的味道</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="css/shopcart.css" type="text/css" rel="stylesheet"/>
+    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/shopcart.js"></script>
+    <script src="js/startMove.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/getcookietoall.js"></script>
+    <script src="js/gouwuchetianjiashop.js"></script>
+    <script src="js/shopcounts.js"></script>
+</head>
+<body>
+<div id="dingbu"></div>
+<div class="header">
+    <div class="head">
+        <div class="head1">
+            <img src="img/topBar_phone.gif"/>
+        </div>
+        <div class="head2">
+            <em></em>
+            <a href="#" target="_self">收藏海客乐</a>
+        </div>
+        <div class="head3">
+            <em></em>
+            <a href="#" target="_blank"></a>
+        </div>
+        <div class="head4">
+            <em></em>
+            <a href="#" target="_blank"></a>
+        </div>
+        <dl>
+            <dt>
+            <li class="dt1">亲，欢迎来到海客乐！
+                <span>
+                    [<a href="login.html" style="color: green;">登录</a>]
+                </span>
+                <span>
+                    [<a href="registered.html">点我注册</a>]
+                </span>
+            </li>
+            <li class="dt2" style="display: none">您好,
+                    <span>
+                        <a id="zahnghao" style="color: green;"></a>
+                    </span>
+                    <span>
+                        <a id="tuichu">退出</a>
+                    </span>
+            </li>
+            </dt>
+            <dd>
+                <a>每日签到</a>
+                <a>团购/礼品卡</a>
+                <a style="color: red;">卡卷预约配送/置换</a>
+                <a>有机追溯查询</a>
+                <a class="lasta">什么是有机产品</a>
+            </dd>
+        </dl>
+    </div>
+</div>
+<div class="logo">
+    <div class="logo1">
+        <a href="#">
+            <img src="img/logo0225.jpg" alt="海客乐有机食品logo" title="上海有机食品领导者"/>
+        </a>
+        <!-- <script>
+             $(function () {
+                 $("#txtKey").val("");
+                 $(".headSearchText-n").click(function () {
+                     $(this).val("");
+                 })
+             })
+         </script>-->
+    </div>
+    <div class="logo2">
+        <input type="text" class="logo21" value="" />
+        <input type="button" class="logo22" value="搜  索"/>
+        <p>热门搜索：
+            <a href="#">水果</a>
+            <a href="#">牛奶</a>
+            <a href="#">套餐</a>
+            <a href="#">禽肉</a>
+            <a href="#">大米</a>
+            <a href="#">鸡蛋</a>
+            <a href="#">蔬菜</a>
+        </p>
+    </div>
+    <div class="logo3">
+        <a class="logo31" href="#"><img  id="logo31" src="img/nav-gif.jpg" /></a>
+        <a id="logo32" class="logo32" href="#" target="_blank"><img id="logo321" src="img/headExpressMap0928.jpg" width="457px" height="375px"/></a>
+    </div>
+    <div class="logo4">
+        <marquee direction="left" behavior="scroll" scrollamount="2" onmouseover="this.stop()" onmouseout="this.start()">
+            <a href="#"  target="_blank">
+                亲爱的会员朋友们，本周一8月22日客服暂停服务一天，在此给您购物带来的不便，我们深表歉意
+            </a>
+        </marquee>
+    </div>
+</div>
+<div class="navs" id="navs">
+    <div class="nav">
+        <div class="nav1">
+            <a href="#" class="nav11">全部商品分类</a>
+            <ul class="nav12" id="nav12">
+                <li>
+                    <h3>
+                        <a href="#" target="_blank" >有机蔬菜</a>
+                        <a href="#" target="_blank" >水果</a>
+                    </h3>
+                    <div style="display: none">
+                        <dl>
+                            <dt>
+                                <a href="#" target="_blank">蔬菜</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>根茎</a>
+                                <a href='#'>茄果</a>
+                                <a href='#'>食用菌</a>
+                                <a href='#'>叶菜</a>
+                                <a href='#'>其它蔬菜</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#"  target="_blank">水果</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>国产水果</a>
+                                <a href='#'>进口水果</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                        <a href="#" target="_blank" >肉禽蛋奶</a>
+                        <a href="#" target="_blank" >水产</a>
+                        <a href="#" target="_blank" >料理</a>
+                    </h3>
+                    <div style="display: none">
+                        <dl>
+                            <dt>
+                                <a href="#" target="_blank">肉类</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>牛肉</a>
+                                <a href='#'>羊肉</a>
+                                <a href='#'>猪肉</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#"  target="_blank">禽类</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>鸡</a>
+                                <a href='#'>鸭</a>
+                                <a href='#'>鸽</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#"  target="_blank">鸡蛋</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>鲜蛋</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#"  target="_blank">牛奶</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>牛奶</a>
+                                <a href='#'>酸奶</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#"  target="_blank">水产</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>水产干货</a>
+                                <a href='#'>速冻水产</a>
+                                <a href='#'>鲜活水产</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#"  target="_blank">料理</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>半成品</a>
+                                <a href='#'>豆制品</a>
+                                <a href='#'>净菜</a>
+                                <a href='#'>面点</a>
+                                <a href='#'>义茂年糕</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                        <a href="#" target="_blank" >粮油</a>
+                        <a href="#" target="_blank" >副食</a>
+                        <a href="#" target="_blank" >调料</a>
+                    </h3>
+                    <div style="display: none">
+                        <dl>
+                            <dt>
+                                <a href="#" target="_blank">大米</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>糙米</a>
+                                <a href='#'>大米</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#"  target="_blank">五谷杂粮</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>粮食加工品</a>
+                                <a href='#'>杂粮</a>
+                                <a href='#'>义茂</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#"  target="_blank">食用油</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>大豆油</a>
+                                <a href='#'>橄榄油</a>
+                                <a href='#'>核桃油</a>
+                                <a href='#'>花生油</a>
+                                <a href='#'>蔡花子油</a>
+                                <a href='#'>葡萄籽油</a>
+                                <a href='#'>山茶油</a>
+                                <a href='#'>亚麻籽油</a>
+                                <a href='#'>晟麦系列促销</a>
+                                <a href='#'>其它食用油</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#"  target="_blank">干货</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>家用菌菇</a>
+                                <a href='#'>名贵菌菇</a>
+                                <a href='#'>南北干货</a>
+                                <a href='#'>水产干货</a>
+                                <a href='#'>信州菌菇</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#"  target="_blank">副食</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>调味品</a>
+                                <a href='#'>方便食品</a>
+                                <a href='#'>罐装食品</a>
+                                <a href='#'>加工辅料</a>
+                                <a href='#'>酱腌菜</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                        <a href="#" target="_blank" >酒水</a>
+                        <a href="#" target="_blank" >饮料</a>
+                    </h3>
+                    <div style="display: none">
+                        <dl>
+                            <dt>
+                                <a href="#" target="_blank">酒类</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>黄酒</a>
+                                <a href='#'>啤酒</a>
+                                <a href='#'>葡萄酒</a>
+                                <a href='#'>洋酒</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#"  target="_blank">饮料</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>功能饮料</a>
+                                <a href='#'>果汁饮料</a>
+                                <a href='#'>蔬菜汁饮料</a>
+                                <a href='#'>饮用水</a>
+                                <a href='#'>植物蛋白饮料</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                        <a href="#" target="_blank" >零食坚果</a>
+                    </h3>
+                    <div style="display: none">
+                        <dl>
+                            <dt>
+                                <a href="#" target="_blank">零食</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>饼干糕点</a>
+                                <a href='#'>炒货及坚果制品</a>
+                                <a href='#'>蜜饯果干</a>
+                                <a href='#'>肉制品</a>
+                                <a href='#'>糖果巧克力</a>
+                                <a href='#'>甜食</a>
+                                <a href='#'>小食</a>
+                                <a href='#'>休闲零食礼盒</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                        <a href="#" target="_blank" >冲泡品</a>
+                        <a href="#" target="_blank" >茶叶</a>
+                    </h3>
+                    <div style="display: none">
+                        <dl>
+                            <dt>
+                                <a href="#" target="_blank">冲调食品</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>冲调粉</a>
+                                <a href='#'>冲饮汤剂</a>
+                                <a href='#'>代茶</a>
+                                <a href='#'>蜂蜜</a>
+                                <a href='#'>即冲麦片</a>
+                                <a href='#'>咖啡</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" target="_blank">茶叶</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>袋泡茶</a>
+                                <a href='#'>花叶茶</a>
+                                <a href='#'>绿茶</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                        <a href="#" target="_blank" >滋补品</a>
+                    </h3>
+                    <div style="display: none">
+                        <dl>
+                            <dt>
+                                <a href="#" target="_blank">滋补品</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>养生干货</a>
+                                <a href='#'>滋补养生</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                        <a href="#" target="_blank" >母婴食品</a>
+                        <a href="#" target="_blank" >日用</a>
+                    </h3>
+                    <div style="display: none">
+                        <dl>
+                            <dt>
+                                <a href="#" target="_blank">母婴食品</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>孕婴奶粉</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" target="_blank">日用品</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>个人护理</a>
+                                <a href='#'>母婴用品</a>
+                                <a href='#'>清洁用品</a>
+                                <a href='#'>生活用具</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" target="_blank">日用器具</a>
+                            </dt>
+                            <dd>
+                                <a href='#'>水净化</a>
+                                <a href='#'>养生器具</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                        <a href="#" target="_blank" >套餐</a>
+                        <a href="#" target="_blank" >礼盒</a>
+                        <a href="#" target="_blank" >同脉卡</a>
+                    </h3>
+                    <div style="display: none">
+                        <dl>
+                            <dt>
+                                <a href="#" target="_blank">套餐</a>
+                            </dt>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" target="_blank">礼盒</a>
+                            </dt>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" target="_blank">同脉卡</a>
+                            </dt>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav2">
+            <ul>
+                <li><a href="index.html">首&nbsp;&nbsp;&nbsp;页</a></li>
+                <li><a href="#">套餐宅配</a><img src="img/hot.gif" class="hot" /></li>
+                <li><a href="#">优惠中心</a></li>
+                <li><a href="#">新品推荐</a></li>
+                <li><a href="#">特色专区</a></li>
+                <li><a href="#">吃饭新知</a></li>
+                <li><a href="#">质量管控</a></li>
+            </ul>
+        </div>
+        <div class="nav3">
+            <div class="nav31">
+                <span id="shopCounct">0</span>
+            </div>
+            <a href="shopcart.html" rel="nofollow">购物车</a>
+            <div id="shopW" class="shopW" style="display: none;"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="main">
+
+    <div id="shoppingcart-img">
+        <ul class="cartStep clearfix cartStep_no1">
+            <li class="step_1">我的购物车</li>
+            <li class="step_2">填写核对订单</li>
+            <li class="step_3">订单提交成功</li>
+        </ul>
+    </div>
+
+    <div id="ctl00_Body_UpdatePanel1">
+        <div class="bluetitle">
+            <div id="ctl00_Body_panelCart" style="width:100%;">
+
+                <div>
+                    <table class="cartTable" rules="all" id="ctl00_Body_grd_Shipping" style="width:100%;border-collapse:collapse;" cellspacing="0" border="1">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width:25%;">商品</th>
+                                <th scope="col" style="width:10%;">单价</th>
+                                <th scope="col" style="width:15%;">购买数量</th>
+                                <th scope="col" style="width:10%;">规格</th>
+                                <th scope="col" style="width:10%;">小计</th>
+                                <th scope="col" style="width:10%;">返HI币</th>
+                                <th scope="col" style="width:10%;">库存</th>
+                                <th scope="col" style="width:10%;">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sahngpinjiazaiya">
+                           <!-- <tr align="center">
+                                <td align="left">
+                                    <a target="_blank" href="#">
+                                        <img src="img/p890575_01.jpg" style="display: inline-block"/>
+                                    </a>
+                                    <a target="_blank" href="#">海客乐有机大米</a>
+
+                                </td>
+                                <td>¥128.00</td>
+                                <td>
+                                    <span class="wrap_input">
+                                        <span class="jian">-</span>
+                                        <span class="input">
+                                            <input maxlength="2" id="Pnum_39196" value="1" type="text"/>
+                                        </span>
+                                        <span class="jia">+</span>
+                                     </span>
+                                </td>
+                                <td>5kg</td>
+                                <td style="color:Red;">¥128.00</td>
+                                <td>128</td>
+                                <td>次日达</td>
+                                <td>
+                                <a href="#" style="color:#085C9B">删除</a>
+                                 </td>
+                            </tr>-->
+                        </tbody>
+                    </table>
+                </div>
+            <div></div>
+                <div class="clearfix1">
+                    <div class="cartCheck">
+                        <p class="cartCheck_p"><span class="cartCheckSpan1">总计</span>(不含运费)：<span id="ctl00_Body_lblAmt fr">￥<span class="cartCheckSpan2"><span id="ctl00_Body_lbl_SumAmount">0.00</span></span></span></p>
+                        <p>
+                            <input name="ctl00$Body$btnSubmit" value="去结算" onclick="return checkstock();" id="ctl00_Body_btnSubmit" class="cartCheck_btn" type="submit">
+                            <a class="cartCheck_btnA" href="#">继续逛逛</a>
+                        </p>
+                        <p style="color:#FF0000;">所有赠品将在订单确认页面显示</p>
+                    </div>
+                </div>
+                <div class="cart_sliderdiv clearfix">
+                    <h4>海客乐推荐</h4>
+                    <div class="cart_sliderbox">
+                        <div class="arrow-btn btn-left dasabled"></div>
+                        <div class="cart_slider">
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank"><img src="img/p002882_01.jpg" class="_"  alt="山中鲜有机老母鸡"> </a>
+                                    <div class="cart_slider_listPadding">
+                                        <p class="cart_slider_listName1"><a href="#" target="_blank">山中鲜有机老母鸡 1kg+</a></p>
+                                        <p class="cart_slider_listName1"><span class="sale_Name1">山林间散养，啄虫吃的土鸡</span></p>
+                                        <p class="clearfix1"><span class="p_priceN fl">¥150.00</span></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank"><img src="img/p002013_01.jpg" class="_"  alt="精装藜麦"> </a>
+                                    <div class="cart_slider_listPadding">
+                                        <p class="cart_slider_listName1"><a href="#" target="_blank">精装藜麦 500g</a></p>
+                                        <p class="cart_slider_listName1"><span class="sale_Name1">丢失的远古谷物</span></p>
+                                        <p class="clearfix1"><span class="p_priceN fl">¥98.00</span></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank"><img src="img/p890511_01.jpg" class="_"  alt="山中鲜有机散养土鸡蛋"> </a>
+                                    <div class="cart_slider_listPadding">
+                                        <p class="cart_slider_listName1"><a href="#"  target="_blank">山中鲜有机散养土鸡蛋 15枚</a></p>
+                                        <p class="cart_slider_listName1"><span class="sale_Name1">散养，无激素抗生素残留</span></p>
+                                        <p class="clearfix1"><span class="p_priceN fl">¥42.00</span></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank"><img src="img/p890575_01.jpg" class="_"  alt="海客乐有机大米"> </a>
+                                    <div class="cart_slider_listPadding">
+                                        <p class="cart_slider_listName1"><a href="#" target="_blank">海客乐有机大米 5kg</a></p>
+                                        <p class="cart_slider_listName1"><span class="sale_Name1">不用菜就可以吃下的米饭</span></p>
+                                        <p class="clearfix1"><span class="p_priceN fl">¥128.00</span></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="arrow-btn btn-right"></div>
+                    </div>
+                </div>
+                <input name="ctl00$Body$btnRefresh" value="" id="btnRefresh" style="display:none" type="submit">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="foot" style="background:#fff;">
+    <div class="footDiv">
+        <div class="b_linkList">
+            <dl>
+                <dt><a title="什么是有机食品" href="#">关于有机食品</a></dt>
+                <dd><a title="什么是有机食品" href="#">什么是有机食品</a></dd>
+                <dd><a title="为何选择有机食品" href="#">为什么要吃有机食品</a></dd>
+                <dd><a title="有机食品为什么贵" href="#">有机食品为什么贵</a></dd>
+                <dd><a title="怎么选购有机食品" href="#">怎么选购有机食品</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">会员制度说明</a></dt>
+                <dd><a href="#">会员等级设定</a></dd>
+                <dd><a href="#">增值服务细则</a></dd>
+                <dd><a href="#">会员体系说明</a></dd>
+                <dd><a href="#">门店会员规则</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#" rel="nofollow">如何购买</a></dt>
+                <dd><a href="#">连锁门店</a></dd>
+                <dd><a href="#">电话定购</a></dd>
+                <dd><a href="#" rel="nofollow">在线订单</a></dd>
+                <dd><a href="#">有机食品团购</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#" rel="nofollow">如何付款</a></dt>
+                <dd><a href="#" rel="nofollow">货到付款</a></dd>
+                <dd><a href="#" rel="nofollow">在线支付</a></dd>
+                <dd><a href="#" rel="nofollow">银行转帐</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">物流配送</a></dt>
+                <dd><a href="#">配送时间</a></dd>
+                <dd><a href="#">配送范围</a></dd>
+                <dd><a href="#">配送费用</a></dd>
+                <dd><a href="#">退换货政策</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#" rel="nofollow">使用帮助</a></dt>
+                <dd><a href="#" rel="nofollow">服务协议</a></dd>
+                <dd><a href="#" rel="nofollow">Hi币说明</a></dd>
+                <dd><a href="#">对外合作</a></dd>
+            </dl>
+        </div>
+        <div class="footContact">
+            <div class="footContact1"></div>
+            <a href="javascript:void(0)" class="footContact2" rel="nofollow" id="BizQQWPA2"></a>
+        </div>
+    </div>
+    <p class="b_linkList2">
+        <a href="#">公司介绍</a><span>|</span>
+        <a href="#" rel="nofollow">公司理念</a><span>|</span>
+        <a href="#" rel="nofollow">企业文化</a><span>|</span>
+        <a href="#" rel="nofollow">人才招聘</a><span>|</span>
+        <a href="#" rel="nofollow">联系我们</a><span>|</span>
+        <a href="#">品牌故事@有机食品</a>
+    </p>
+    <p class="b_linkList2">
+        <span>Copyright &copy;2007-2016&nbsp;&nbsp;&nbsp;
+        <a href="#">上海同脉食品有限公司</a>&nbsp;&nbsp;&nbsp;
+        All Rights Reserved</span>沪ICP备09070003号
+    </p>
+    <p class="footIcon">
+        <span class="footIcon1"></span>
+        <a target="_blank" href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20120313103229816" rel="nofollow" class="footIcon2"></a>
+    </p>
+</div>
+<div class="footTj">
+    <a href="http://tongji.baidu.com/web/welcome/login" target="_blank">
+        <img src="img/24.gif"/>
+    </a>
+</div>
+<div class="floatAd_div0805">
+    <a href="#" target="_blank"><img src="img/fd1118.jpg" width="145" height="145" /></a>
+</div>
+<div class="floatDiv">
+    <a href="javascript:void(0)" class="float1" rel="nofollow" id="BizQQWPA">
+        <span id="qqHelp" class="float1Span"></span>
+    </a>
+    <a href="javascript:void(0)" class="float2">
+        <span id="float2Span" class="float2Span"></span>
+    </a>
+    <a href="#dingbu" class="float2">
+        <span class="float3Span" style="display: none"></span>
+    </a>
+    <p class="float1P" style="display: none"></p>
+    <p class="float2P" style="display: none"></p>
+</div>
+</body>
+</html>

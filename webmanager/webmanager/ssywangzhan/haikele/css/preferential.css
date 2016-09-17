@@ -1,0 +1,287 @@
+/* css */
+body,div,ul,li { padding: 0; margin: 0; }
+ul { list-style: none ; }
+*{margin: 0;padding: 0;}
+img { border: none; display: block;}
+a {text-decoration: none;}
+body, button, input, select, textarea {
+    color: #333333;
+    font-size:12px;
+}
+button, input,select, textarea {border:none;}
+ol, ul {
+    list-style: none outside none;
+}
+li {list-style:none;}
+a img {
+    display: block;
+    float: left;
+    margin-right:10px;
+    border:none;
+}
+img {
+    vertical-align: middle;border:none;
+}
+.clearfix1:after {
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/*-----------------------------------*/
+.main {
+    width: 1000px;
+    margin: 0 auto;
+}
+.breadcrumb {
+    width: 100%;
+    float: left;
+    margin: 7px 0 10px 0;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 5px;
+}
+.breadcrumb li {
+    float: left;
+    margin-right: 10px;
+    line-height: 14px;
+}
+.breadcrumb a, .breadcrumb a:link, .breadcrumb a:visited {
+    color: #333;
+    text-decoration: none;
+}
+.discount {
+    float: left;
+    width: 100%;
+}
+.discountTab_title {
+    border-bottom: 2px solid #85B819;
+    position: relative;
+    height: 30px;
+    margin: 0px 0 10px 0;
+    float: left;
+    width: 990px;
+    padding: 0 0 0 10px;
+}
+.discountTab_title li {
+    display: block;
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    border-bottom: none;
+    float: left;
+}
+.discountTab_titleSelect {
+    border: 2px solid #85B819;
+    background: #85B819;
+    border-radius: 5px 5px 0 0;
+}
+.discountTab_title .discountTab_titleSelect a {
+    color: #FFF;
+}
+.discountTab_title li {
+    display: block;
+    line-height: 30px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    border-bottom: none;
+    float: left;
+}
+.discount .plistUl {
+    width: 100%;
+}
+.plistUl {
+    width: 798px;
+    float: left;
+}
+.plistUl li {
+    width: 24.9%;
+    padding: 10px 0;
+    float: left;
+}
+.newpdtPlist_list {
+    margin: 0 auto;
+    border: 1px solid #FFF;
+    line-height: 20px;
+    width: 210px;
+    position: relative;
+    padding: 10px 10px 0 10px;
+}
+.newpdtPlist_list img {
+    width: 210px;
+    height: 210px;
+}
+.newpdtPlist_list .plistUPadding {
+    padding: 5px 0 10px 0;
+}
+.plistUPadding {
+    padding: 5px 15px 10px 15px;
+    text-align: left;
+}
+.plistUl p {
+    width: 100%;
+}
+.plist_listName1 {
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+.sale_Name1 {
+    color: #0aa006;
+}
+.fl {
+    float: left;
+}
+.p_priceN {
+    color: #FF0000;
+    font-size: 14px;
+    margin: 0 10px 0 0;
+}
+.fl {
+    float: left;
+}
+.pInfo_price2 {
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+.plistUl p {
+    width: 100%;
+}
+.plist_list_comment {
+    margin: 6px 0 0 0;
+    height: 18px;
+}
+.plistUPadding .plist_list_comment a {
+    color: #0087DC;
+    margin: 0 0 0 10px;
+}
+.plistUlP {
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+}
+.plist_list_num {
+    float: left;
+}
+.plist_list_num_text {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    width: 30px;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+}
+.plist_list_num span {
+    float: left;
+    height: 28px;
+    margin-left: 2px;
+    width: 16px;
+    padding: 1px 0 0 0;
+}
+.plist_list_num_add, .plist_list_num_dis {
+	display: block;
+	border: 0;
+    width: 16px;
+    height: 14px;
+    /*display: inline-block;*/
+    cursor: pointer;
+    background: url(../img/sprite.png) no-repeat 0px 0px;
+}
+.plist_list_num_add {
+    background-position: -8px -50px;
+}
+.plist_list_num_dis {
+    background-position: -8px -64px;
+}
+.plistUlP a.plist_listBtn, .cAbout_btn2 {
+    border-radius: 3px;
+    background-color: #63C95B;
+    width: 78px;
+    height: 26px;
+    cursor: pointer;
+    color: #fff;
+    float: right;
+    line-height: 26px;
+    text-align: center;
+    text-decoration: none;
+}
+.plistUlP .plist_listBtn, .plistUlP .plist_listBtn2 {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    left: 59px;
+}
+.plist_listDate {
+    height: 18px;
+}
+.discountSale {
+    width: 45px;
+    height: 56px;
+    background: url(../img/sprite.png) no-repeat -102px -50px;
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 5px 0 0 0;
+    font-style: normal;
+}
+.discountSale p {
+    font-size: 14px;
+}
+.plistUl p {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

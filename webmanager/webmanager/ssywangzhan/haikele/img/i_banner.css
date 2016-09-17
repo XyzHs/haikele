@@ -1,0 +1,29 @@
+/* css 重置 */
+body,div,ul,li { padding: 0; margin: 0; }
+ul { list-style: none ; }
+img { border: none; }
+a { blr: expression(this.onFocus=this.blur()); outline: none; }
+
+/*css主体*/
+._banner { width: 100%;height: 395px;position: relative; overflow:hidden; margin-bottom: 15px; }
+
+/*数字按钮样式*/
+._banner .num { overflow:hidden; height: 15px; position:absolute; left:40%; bottom:0; zoom:1; z-index:3 }
+._banner .num li { width: 80px; height: 13px; line-height: 13px; text-align: center; font-weight: 300; font-family: "微软雅黑", Arial; 
+color: black; background:white;margin-left:5px; cursor:pointer; float: left;
+filter:alpha(opacity=50); 
+-moz-opacity:0.5; 
+opacity:0.5;
+}
+._banner .num li.on { background:white; 
+filter:alpha(opacity=90); 
+-moz-opacity:0.9; 
+opacity:0.9;
+} /*当前项*/
+
+/*上一个  下一个*/
+._banner .prev,
+._banner .next { display: none; width: 40px; height: 100px; background: url(btn.png) no-repeat; position: absolute; top: 115px;}
+._banner .prev { left: 0; }
+._banner .next { right: 0; background-position: right }
+

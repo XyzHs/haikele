@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* CSS Document */
+/* slide */
+.slide {POSITION: relative; WIDTH: 600px; HEIGHT: 300px; OVERFLOW: hidden}
+.slide .box {POSITION: relative; WIDTH: 600px; HEIGHT: 300px; OVERFLOW: hidden}
+.slide .list {HEIGHT: 9999px; OVERFLOW: hidden}
+.slide .list LI {POSITION: relative; WIDTH: 600px; HEIGHT: 300px; OVERFLOW: hidden; _vertical-align: top}
+.slide .list LI A {POSITION: relative; WIDTH: 600px; DISPLAY: block; HEIGHT: 300px; OVERFLOW: hidden; _vertical-align: top}
+.slide .list IMG {WIDTH: 600px; FLOAT: left; HEIGHT: 300px; _vertical-align: top}
+.slide .btn {POSITION: absolute; BOTTOM: 4px; OVERFLOW: hidden; RIGHT: 6px}
+.slide .btn LI {TEXT-ALIGN: center; MARGIN: 0px 0px 0px 10px; WIDTH: 16px; FONT: 11px/16px Tahoma; BACKGROUND: #eee; FLOAT: left; HEIGHT: 16px; COLOR: #333; CURSOR: pointer; border-radius: 2px}
+.slide .btn .selected {BACKGROUND: #f30; COLOR: #fff}
+.slide_x .list {WIDTH: 9999px; OVERFLOW: hidden}
+.slide_x .list LI {POSITION: relative; WIDTH: 1920px; FLOAT: left}
+.slide_x_1 {POSITION: relative; WIDTH:1000px; HEIGHT:200px; OVERFLOW: hidden;float:left;}
+.slide_x_1 .box {POSITION: relative; WIDTH:1000px; HEIGHT:200px; OVERFLOW: hidden}
+.slide_x_1 .list {WIDTH: 9999px; OVERFLOW: hiddens}
+.slide_x_1 .list LI {POSITION: relative; WIDTH:1000px; FLOAT: left}
+.slide_x_1 .list LI A {POSITION: relative; WIDTH:1000px; DISPLAY: block; HEIGHT:200px; OVERFLOW: hidden}
+.slide_x_1 .list IMG {_vertical-align: top}
+.slide_x_1 .btn {POSITION: absolute; BOTTOM: 4px; OVERFLOW: hidden; RIGHT: 6px}
+.slide_x_1 .btn LI {TEXT-ALIGN: center; MARGIN: 0px 0px 0px 10px; WIDTH: 16px; FONT: 11px/16px Tahoma; BACKGROUND: #eee; FLOAT: left; HEIGHT: 16px; COLOR: #333; CURSOR: pointer; border-radius: 2px}
+.slide_x_1 .btn .selected {BACKGROUND: #f30; COLOR: #fff}
+.slide_x_2 {POSITION: relative;OVERFLOW: hidden;float:left;width:807px;height:298px;border:1px solid #CCC;border-left:none;}
+.slide_x_2 .box {POSITION: relative; WIDTH:808px; HEIGHT:300px; OVERFLOW: hidden}
+.slide_x_2 .list {WIDTH: 9999px; OVERFLOW: hiddens}
+.slide_x_2 .list LI {POSITION: relative; WIDTH:808px; FLOAT: left}
+.slide_x_2 .list LI A {POSITION: relative; WIDTH:808px; DISPLAY: block; HEIGHT:300px; OVERFLOW: hidden}
+.slide_x_2 .list IMG {_vertical-align: top}
+.slide_x_2 .btn {POSITION: absolute; BOTTOM: 4px; OVERFLOW: hidden; RIGHT: 6px}
+.slide_x_2 .btn LI {TEXT-ALIGN: center; MARGIN: 0px 0px 0px 10px; WIDTH: 16px; FONT: 11px/16px Tahoma; BACKGROUND: #eee; FLOAT: left; HEIGHT: 16px; COLOR: #333; CURSOR: pointer; border-radius: 2px}
+.slide_x_2 .btn .selected {BACKGROUND: #f30; COLOR: #fff}
+#slide_focus {POSITION: relative; MARGIN: 0px auto; WIDTH:100%; HEIGHT: 395px; OVERFLOW: hidden}
+#slide_focus .box {POSITION: relative; WIDTH:1920px; HEIGHT: 395px; OVERFLOW: hidden}
+#slide_focus .list {HEIGHT: 9999px; OVERFLOW: hidden}
+#slide_focus .list LI {	POSITION: relative; MARGIN: 0px auto; WIDTH:1920px; HEIGHT: 395px; OVERFLOW: hidden; _vertical-align: top}
+#slide_focus .list LI A {POSITION: relative; WIDTH:1920px; DISPLAY: block; HEIGHT: 395px; OVERFLOW: hidden; _vertical-align: top}
+#slide_focus .list IMG {WIDTH:1920px; FLOAT: left; HEIGHT: 395px; _vertical-align: top}
+#slide_focus .btn {OVERFLOW: hidden;width:1000px;margin:0 auto; position:relative;bottom:24px;}
+#slide_focus .btn ul {float:right;}
+#slide_focus .btn LI {TEXT-ALIGN: center; MARGIN: 0px 0px 0px 10px; WIDTH: 16px; FONT: 11px/16px Tahoma; BACKGROUND: #eee; FLOAT: left; HEIGHT: 16px; COLOR: #333; CURSOR: pointer; border-radius: 2px}
+#slide_focus .btn .selected {BACKGROUND: #f30; COLOR: #fff}
+#slide_focus .plus {WIDTH: 28px; BACKGROUND: url(../Images/bannerPlus.png) no-repeat left top transparent; HEIGHT: 48px; CURSOR: pointer;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Images/bannerPlus.png', sizingMethod='crop');float:right;opacity:0.5;}
+.plusDiv {width:1000px;bottom:250px;margin:0 auto;position:relative; display:none}
+/*main*/
+.indexMain {width:1000px;margin:10px auto 0 auto;}
+.indexNews {width:190px;height:292px;border:1px solid #CCC;float:left;}
+#tabbox{ width:600px; overflow:hidden; margin:0 auto;}
+.tab_conbox{border: 1px solid #CCC;border-top: none;border-left:none;height:259px;}
+.tab_con{ display:none;}
+.tabs{height: 33px;border-bottom:1px solid #CCC;width: 100%;}
+.tabs li{height:32px;line-height:32px;float:left;border:1px solid #EEEEEE ;border-left:none;border-bottom:none;margin-bottom: -1px;background: #F7F7F7;overflow: hidden;position: relative;}
+.tabs li a {display: block;padding: 0 30px;color:#333; text-decoration:none;font-size:13px;}
+.tabs li a:hover {background: #ccc;}	
+.tabs .thistab{background: #fff;border-top:2px solid #59960d;border-right:1px solid #59960d;border-left:1px solid #59960d;}
+.tabs .thistab a:hover {background:#FFF;}
+.tab_con {padding:6px 0;line-height:20px;width:100%; position:relative;height:259px;}
+.tab_conMore { position:absolute;right:10px;bottom:15px; z-index:9999}
+.tab_conMore a,.tab_conMore a:link,.tab_conMore a:visited,.tab_conMore a:hover {color:#CC0000; text-decoration:underline;}
+.indexHot {width:808px;float:left;}
+.tab_conDiv {width:192px;text-align:center;float:left; position:relative;margin:0 3px; display:inline;border:1px solid #FFF;padding:10px 0;}
+.tab_conDiv:hover {border:1px solid #DDD;box-shadow:0 1px 3px 3px #EEE}
+.tab_conDiv2 {width:160px;text-align:center;float:left; position:relative;margin:0 18px; display:inline;border:2px solid #FFF;}
+.tab_conDiv2 strong {color:#CC0000;}
+.tab_conDiv2 a,.tab_conDiv2 a:link,.tab_conDiv2 a:visited {color:#333; text-decoration:none;}
+.tab_conDiv2 a:hover {color:#CC0000;text-decoration:underline}
+.tab_con p {width:170px;margin:0 auto; text-align:left;_width:190px;}
+.tab_con p a,.tab_con p a:link,.tab_con p a:visited {color:#333; text-decoration:none;}
+.tab_con p a:hover {color:#CC0000; text-decoration:underline}
+.indexHotSpan {color:#006600;}
+.indexHotP {height:36px;overflow:hidden;text-overflow:ellipsis;line-height:18px;}
+.indexHotP2 {height:40px;overflow:hidden;text-overflow:ellipsis;line-height:40px; position:relative;}
+.indexHotP2 img { vertical-align:middle;padding:0 0 0 5px;}
+.indexHotP3 {height:54px;overflow:hidden;text-overflow:ellipsis;line-height:18px;}
+.indexHotP4 {height:18px;overflow:hidden;text-overflow:ellipsis;line-height:18px;}
+.indexHotPrice { text-decoration:line-through;margin-right:15px;color:#888;}
+.indexHotPriceO {color:#E60012;font-size:16px;font-weight:normal;}
+.indexAd {margin:15px auto;}
+.indexNew {width:1000px;margin:15px auto 0 auto;}
+.indexNew h3 {width:100%;color:#CC0000;font-size:16px;font-weight:bold;border-bottom:1px solid #CCC; text-indent:10px;padding:0 0 3px 0; position:relative;float:left;}
+.indexNewIcon { position:absolute;left:75px;top:0px;}
+.indexNewIcon2 { position:absolute;left:210px;top:0px;}
+.indexNew h3 a,.indexNew h3 a:link,.indexNew h3 a:visited {color:#333; text-decoration:none;font-size:12px;font-weight:normal;margin-left:10px;line-height:22px;}
+.indexNew h3 a:hover {color:#CC0000; text-decoration:underline;}
+.indexNew span {margin-right:20px;}
+.indexNewPic {width:192px;height:450px;float:left;}
+.indexNewPic div {background:#000;}
+.indexNewPic div span { position:absolute;top:0px;left:0px;height:24px;line-height:24px;color:#FFF;width:100%; text-align:center;font-weight:bold;background:url(../Images/index/indexNcBg.png) no-repeat left top;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Images/index/indexNcBg.png', sizingMethod='crop'); display:none}
+.indexPlist {width:995px;border:1px solid #CCC;border-top:none;float:left;padding:10px 2px 10px 1px;}
+.indexPlistLi {width:192px;float:left; text-align:center;margin:0 2px; display:inline; position:relative;border:1px solid #FFF;padding:10px 0;}
+.indexPlistLi:hover {border:1px solid #DDD;box-shadow:0 1px 3px 3px #EEE}
+.indexPlistLi a img {width:170px;height:170px;}
+.indexPlist p {margin:0 auto;text-align:left;width:170px;_width:190px;}
+.indexPlist p a,.indexPlist p a:link,.indexPlist p a:visited {color:#333; text-decoration:none;}
+.indexPlist p a:hover {color:#CC0000; text-decoration:underline;}
+.indexFloor {width:1000px;margin-top:15px;}
+.indexFloor h3 {width:100%;float:left;font-size:12px;font-weight:normal}
+.indexFloor h3 span {width:192px;height:32px;line-height:32px;color:#FFF;font-size:16px;text-align:center; display:block;float:left;}
+.indexFloor h3 span a,.indexFloor h3 span a:link,.indexFloor h3 span a:visited,.indexFloor h3 span a:hover {color:#FFF; text-decoration:none;}
+.indexFloor h3 div {float:left;line-height:32px;margin-left:5px; display:inline;}
+.indexFloor h3 div a,.indexFloor h3 div a:link,.indexFloor h3 div a:visited {color:#333; text-decoration:none;margin-left:10px;}
+.indexFloor h3 div a:hover {color:#CC0000; text-decoration:underline;}
+.indexFloor1 h3 span {background:#A8CA31;}
+.indexFloor2 h3 span {background:#FF7B33;}
+.indexFloor3 h3 span {background:#FC6385;}
+.indexFloor4 h3 span {background:#FBB81C;}
+.indexFloor5 h3 span {background:#F06063;}
+.indexFloor6 h3 span {background:#9844A2;}
+.indexFloor h4 {width:100%;float:left;font-size:14px;font-weight:normal; text-align:center;font-weight:bold;color:#CC0000;}
+.indexFloor1More,.indexFloor1More:link,.indexFloor1More:visited {text-decoration:none;float:right;line-height:32px;}
+.indexFloor2More,.indexFloor2More:link,.indexFloor2More:visited {text-decoration:none;float:right;line-height:32px;}
+.indexFloor3More,.indexFloor3More:link,.indexFloor3More:visited {text-decoration:none;float:right;line-height:32px;}
+.indexFloor4More,.indexFloor4More:link,.indexFloor4More:visited {text-decoration:none;float:right;line-height:32px;}
+.indexFloor5More,.indexFloor5More:link,.indexFloor5More:visited {float:right;line-height:32px;}
+.indexFloor6More,.indexFloor6More:link,.indexFloor6More:visited {text-decoration:none;float:right;line-height:32px;}
+.indexFloor1More:hover,.indexFloor2More:hover,.indexFloor3More:hover,.indexFloor4More:hover,.indexFloor5More:hover,.indexFloor6More:hover {color:#CC0000; text-decoration:underline;}
+.indexFloorHot {padding:0px;width:190px;height:299px;border:1px solid #CCC;border-top:none;float:left;overflow:hidden;}
+.indexFloorHotD{background:#fff;width:100%;float:left;border-bottom:1px dashed #CCC;}
+.indexFloorHotA,.indexFloorHotA a:link,.indexFloorHotA a:visited {width:100%;height:30px;float:left;line-height:30px;overflow:hidden;color:#333; text-decoration:none}
+.indexFloorHotA:hover {color:#CC0000;}
+.indexFloorHotD div {display:none;float:left;width:100%;}
+.indexFloorHotD div p {margin:4px 0;}
+.indexFloorHotD div img {border:1px solid #CCC;width:66px;height:66px;float:left;margin:0 10px 10px 0;}
+.indexFloor .indexNewPic {width:192px;height:300px;float:left; overflow:hidden;}
+.indexTcRight {width:170px;float:left;height:289px; overflow:hidden;border:1px solid #CCC;padding:10px 10px 0 10px;border-top:none;}
+.indexTcRight h4 {float:left;width:100%;}
+.indexTcRight ul {float:left;width:100%;}
+.indexTcRight li {float:left;width:100%;border-bottom:1px dashed #CCC;padding:6px 0;line-height:20px;}
+.indexTcRight img {float:left;margin-right:10px;}
+.indexCp {width:170px;float:left;height:279px; overflow:hidden;border:1px solid #CCC;padding:10px;border-top:none;line-height:20px;}
+.indexHotIcon {width:36px;height:17px; text-align:center;background:url(../Images/index/indexHotIcon.gif) no-repeat left top; display:block; position:absolute;right:10px;top:10px;color:#FFF;line-height:17px;}
+.indexAdcart,.indexAdcart:link,.indexAdcart:visited{width:100%;height:36px;color:#FFF;line-height:36px;background:url(../Images/index/indexAdcartBgN.gif) repeat-x left top; position:absolute;left:0;bottom:0px;font-size:15px; text-decoration:none; display:none; text-indent:30px;}
+.indexAdcartHover {border:2px solid #f56301;}
+.indexAdcartDiv {width:100%;height:208px;background:#000;position:absolute;top:0px; left:0px;filter:alpha(opacity=20);opacity:0.2; display:block; cursor:pointer;}
+.index-text {border:1px solid #ddd;box-shadow:1px 1px 6px 1px #DDD;border-radius:2px;border-bottom:4px solid #85B819;padding:15px;line-height:22px;margin:15px 0 0 0;}
+.index-text h3 {font-size:16px; font-style:italic;padding:0 0 10px 0;}
+.index_comment {width:25%;float:left; text-align:center;height:253px; overflow:hidden}
+.index_comment_name {float:left;width:105px; overflow:hidden;height:18px;}
+.index_comment_text {height:54px;overflow:hidden;line-height:18px;}
+.index_comment_user {padding:3px 0;}
+.index_comment img {width:120px;height:120px;margin:0 0 5px 0;}
+.index_comment_time {color:#999;}
+.index_comment p {}
+.index_comment .red {font-size:14px;}
+.infexFoot {height:97px;background:url(../Images/index/indexFoot.jpg) no-repeat left top;}
+.infexFoot1,.infexFoot2,.infexFoot3,.infexFoot4,.infexFoot5 { display:inline-block;float:left;height:100%;}
+.infexFoot1 {width:170px;margin:0 0 0 40px;}
+.infexFoot2 {width:135px;margin:0 0 0 30px;}
+.infexFoot3 {width:150px;margin:0 0 0 30px;}
+.infexFoot4 {width:175px;margin:0 0 0 35px;}
+.infexFoot5 {width:160px;margin:0 0 0 25px;}
+.slide_x_7 {position: relative; width:192px; height:300px; overflow: hidden;float:left;}
+.slide_x_7 .box {position: relative; width:193px; height:300px; overflow: hidden}
+.slide_x_7 .list {width: 9999px;}
+.slide_x_7 .list LI {position: relative; width:193px; float: left}
+.slide_x_7 .list LI A {position: relative; width:193px; display: block; height:300px; overflow: hidden}
+.slide_x_7 .list IMG {_vertical-align: top}
+.slide_x_7 .btn {position: absolute; bottom: 4px; overflow: hidden; right: 6px}
+.slide_x_7 .btn LI {text-align: center; margin: 0px 0px 0px 10px; width: 16px; font:0px; background: #eee; float: left; height: 6px; text-indent:-999px; color: #333; cursor: pointer; border-radius: 2px}
+.slide_x_7 .btn .selected {background: #f30; COLOR: #fff}
+/*new banner*/
+#Slidebox{width:100%; height:395px;  padding:0px;  margin:0 auto;  /*position:relative;*/overflow:hidden;min-width:1000px;}
+#wrapper {width: 100%;height: 395px;overflow: hidden;position:relative}
+#carousel img,#carousel a {display: block;float: left;height:395px;}
+#prev, #next {display: block;height: 395px;width: 10%;top: 0;position: absolute;}
+#prev:hover, #next:hover {background-color: #fff;background-color: rgba(255, 255, 255, 0.8);}
+#prev {left: -495px;}
+#next {right: -495px;}
+#pager {margin-right: -470px;position: absolute;right: 50%;bottom: 10px;}
+#pager a {display: inline-block;WIDTH: 16px;height:16px;margin:0 5px 0 0;BACKGROUND:#EEE;color: #333;border-radius: 2px;cursor:pointer; text-align:center; text-decoration:none;FONT: 11px/16px Tahoma;}
+#pager a:hover,#pager a.selected {background:#F30;color:#FFF;}
+.caroufredsel_wrapper {height:395px;}

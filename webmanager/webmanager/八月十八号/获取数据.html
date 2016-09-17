@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>获取ajax数据</title>
+    <script src="ajax封装.js"></script>
+</head>
+<body>
+<div id="div1">
+    <p id="pName">1</p>
+    <p id="pAge">2</p>
+    <p id="pImg1">3<img id="pImg"/></p>
+    <p id="pTil">4</p>
+</div>
+<input  id="bt" type="button" value="加载数据"/>
+<script>
+    var pName=document.getElementById("pName");
+    var pAge=document.getElementById("pAge");
+    var pImg=document.getElementById("pImg");
+    var pImg1=document.getElementById("pImg1");
+    var pTil=document.getElementById("pTil");
+    var bt=document.getElementById("bt");
+    bt.onclick=function(){
+        ajax("get","json1.json",callback);
+    };
+    function callback(a) {
+                var Data=eval("("+a+")");
+                pName.innerHTML=Data.name;
+                pAge.innerHTML=Data.age;
+                pImg1.innerHTML="";
+                pImg1.style.height="300px";
+                pImg1.style.width="400px";
+                pTil.innerHTML=Data.Title;
+                pImg.src=Data.imgSrc;
+                pImg1.appendChild(pImg);
+    }
+
+    //    alert(bt);
+    /*bt.onclick=function() {
+        var xhr;
+        if (window.XMLHttpRequest) {
+            xhr = new XMLHttpRequest();
+        } else {
+            xhr = new ActiveXObject("Microsoft.HTMLHTTP");
+        }
+        xhr.open("get", "json1.json", true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var result= xhr.responseText;
+                    var Data=eval("("+result+")");
+                    pName.innerHTML=Data.name;
+                    pAge.innerHTML=Data.age;
+                    pImg1.innerHTML="";
+                    pImg1.style.height="300px";
+                    pImg1.style.width="400px";
+                    pTil.innerHTML=Data.Title;
+                    pImg.src=Data.imgSrc;
+                    pImg1.appendChild(pImg);
+                } else {
+                    oDiv1.innerHTML = "未获取";
+                }
+            }
+        }
+        xhr.send();
+    }*/
+</script>
+</body>
+</html>

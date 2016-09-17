@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ajax</title>
+    <script src="ajax.js"></script>
+</head>
+<body>
+<input type="text" value="宋胜勇">
+<div id="div1">123</div>
+<input id="bt1" type="button" value="异步获取"/>
+<div id="div2">456</div>
+<input id="bt2" type="button" value="同步获取"/>
+<div id="div3">789</div>
+<input id="bt3" type="button" value="同步获取"/>
+<script>
+    var oDiv1=document.getElementById("div1");
+    var oDiv2=document.getElementById("div2");
+    var oDiv3=document.getElementById("div3");
+    var oBt1=document.getElementById("bt1");
+    var oBt2=document.getElementById("bt2");
+    var oBt3=document.getElementById("bt3");
+    oBt1.onclick=function(){
+        var xhr;
+        if(window.XMLHttpRequest){
+            xhr=new XMLHttpRequest();
+        }else{
+            xhr=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xhr.open("get","http://localhost:63342/%E5%85%AB%E6%9C%88%E5%8D%81%E5%85%AB%E5%8F%B7/tet.html",true);
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4){
+                if(xhr.status==200){
+                    oDiv1.innerHTML=xhr.responseText;
+                }else{
+                    oDiv1.innerHTML="未获取";
+                }
+            }
+        };
+        xhr.send();
+    };
+    oBt2.onclick=function(){
+        var xhr;
+        if(window.XMLHttpRequest){
+            xhr=new XMLHttpRequest();
+        }else{
+            xhr=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xhr.open("get","http://localhost:63342/%E5%85%AB%E6%9C%88%E5%8D%81%E5%85%AB%E5%8F%B7/tet.html",false);
+        xhr.send();
+            if(xhr.readyState==4){
+                if(xhr.status==200){
+                    oDiv2.innerHTML=xhr.responseText;
+                }else{
+                    oDiv2.innerHTML="未获取";
+                }
+            }
+    };
+    oBt3.onclick=function(){
+        var a;
+        ajax(a,"tet.html",false,oDiv3);
+    };
+</script>
+</body>
+</html>
